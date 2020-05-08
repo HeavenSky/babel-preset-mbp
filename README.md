@@ -6,11 +6,20 @@
 ## 使用方法
 ```json
 // .babelrc
-{ "presets": ["mbp"] } // 等同 ["mbp/stage-0"]
-{ "presets": ["mbp/stage-0"] }
-{ "presets": ["mbp/stage-1"] }
-{ "presets": ["mbp/stage-2"] }
-{ "presets": ["mbp/stage-3"] }
+{ "presets": [["mbp",{/* option */}]] }
+{ "presets": ["babel-preset-mbp/stage-0"] }
+{ "presets": ["babel-preset-mbp/stage-1"] }
+{ "presets": ["babel-preset-mbp/stage-2"] }
+{ "presets": ["babel-preset-mbp/stage-3"] }
+```
+### option
+```ts
+interface Option {
+	vue?: boolean;      // 是否启用vue预设
+	react?: boolean;    // 是否启用react预设
+	stage?: number;     // 启用的stage版本: 0,1,2,3 默认0
+	[key: string]: any; // @babel/preset-env配置项
+}
 ```
 
 ## 开发说明

@@ -1,6 +1,6 @@
 {
 	"name": "babel-preset-mbp",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"publishConfig": {
 		"registry": "https://registry.npmjs.org"
 	},
@@ -21,6 +21,9 @@
 		"@babel/plugin-proposal-pipeline-operator": "^7.8.3",
 		"@babel/plugin-proposal-throw-expressions": "^7.8.3",
 		"@babel/plugin-syntax-dynamic-import": "^7.8.3",
-		"@babel/plugin-syntax-import-meta": "^7.8.3"
+		"@babel/plugin-syntax-import-meta": "^7.8.3",
+		"@babel/preset-env": "^7.9.6",
+		"@babel/preset-react": "^7.9.4",
+		"@vue/babel-preset-app": "^4.3.1"
 	}
 }
