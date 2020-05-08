@@ -17,7 +17,7 @@
 interface Option {
 	vue?: boolean;      // 是否启用vue预设
 	react?: boolean;    // 是否启用react预设
-	stage?: number;     // 启用的stage版本: 0,1,2,3 默认0
+	stage?: number;     // 启用的stage版本: 0,1,2,3
 	[key: string]: any; // @babel/preset-env配置项
 }
 ```

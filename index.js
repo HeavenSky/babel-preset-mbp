@@ -1,13 +1,11 @@
 module.exports = function (_api, option, _cwd) {
 	const { vue, react, stage, ...opt } = option || {};
-	let N = parseInt(stage) || 0;
-	if (N > 3 || N < 0) { N = 0; }
+	const N = parseInt(stage); const env = require(vue
+		? "@vue/babel-preset-app" : "@babel/preset-env");
 	return {
-		presets: [[require(vue ? "@vue/babel-preset-app"
-			: "@babel/preset-env"), opt]].concat(
+		presets: [[env, opt]].concat(
 			react ? require("@babel/preset-react") : [],
-			require("./stage-" + N)
-		),
+			N > -1 && N < 4 ? require("./stage-" + N) : []),
 		plugins: [],
 	};
 };
