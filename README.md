@@ -12,3 +12,14 @@
 { "presets": ["mbp/stage-2"] }
 { "presets": ["mbp/stage-3"] }
 ```
+
+## 开发说明
+> https://babeljs.io/docs/en/config-files#config-function-api
+```js
+module.exports = function (_api, _option, _cwd) {
+	return {
+		presets: [ ... ],
+		plugins: [ ... ],
+	};
+};
+```
