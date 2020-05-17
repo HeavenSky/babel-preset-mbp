@@ -1,11 +1,10 @@
 module.exports = function (_api, option, _cwd) {
-	const { vue, react, stage, ...opt } = option || {};
-	const N = parseInt(stage); const env = require(vue
-		? "@vue/babel-preset-app" : "@babel/preset-env");
-	return {
-		presets: [[env, opt]].concat(
-			react ? require("@babel/preset-react") : [],
-			N > -1 && N < 4 ? require("./stage-" + N) : []),
-		plugins: [],
-	};
+	const { ts, vue, react, stage, ...opt } = option || {};
+	const N = parseInt(stage, 10); Object.assign(opt, vue);
+	const presets = [
+		[require(vue ? "@vue/babel-preset-app" : "@babel/preset-env"), opt],
+		react && [require("@babel/preset-react"), { ...react }],
+		ts && [require("@babel/preset-typescript"), { ...ts }],
+		N > -1 && N < 4 && require("./stage-" + N),
+	].filter(Boolean); return { presets };
 };
