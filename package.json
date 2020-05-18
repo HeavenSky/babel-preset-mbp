@@ -1,6 +1,6 @@
 {
 	"name": "babel-preset-mbp",
-	"version": "0.0.6",
+	"version": "0.0.7",
 	"publishConfig": {
 		"registry": "https://registry.npmjs.org"
 	},
@@ -26,5 +26,15 @@
 		"@babel/preset-react": "^7.9.4",
 		"@babel/preset-typescript": "^7.9.0",
 		"@vue/babel-preset-app": "^4.3.1"
-	}
+	},
+	"repository": {
+		"type": "git",
+		"url": "http://github.com/HeavenSky/babel-preset-mbp"
+	},
+	"homepage": "http://github.com/HeavenSky/babel-preset-mbp",
+	"bugs": "http://github.com/HeavenSky/babel-preset-mbp/issues",
+	"authors": [
+		"HeavenSky <li.heaven@qq.com> (https://github.com/HeavenSky)"
+	],
+	"license": "MIT"
 }

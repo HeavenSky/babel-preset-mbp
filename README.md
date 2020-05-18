@@ -14,6 +14,10 @@
 { "presets": ["babel-preset-mbp/stage-3"] }
 ```
 
+### 查看子依赖和次级依赖
+* 几乎把常见的babel依赖都涵盖进去了
+* http://npm.broofa.com/?q=babel-preset-mbp
+
 ### option
 ```ts
 interface Option {
