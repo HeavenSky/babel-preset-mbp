@@ -1,4 +1,5 @@
-# babel-preset-mbp 预设babel最佳实践
+# babel-preset-mbp
+babel预设的最佳实践
 
 ## 参考来源
 * preset参考: https://babeljs.io/docs/en/babel-preset-env
@@ -8,10 +9,6 @@
 * .babelrc
 ```json
 { "presets": [["mbp",{/* option */}]] }
-{ "presets": ["babel-preset-mbp/stage-0"] }
-{ "presets": ["babel-preset-mbp/stage-1"] }
-{ "presets": ["babel-preset-mbp/stage-2"] }
-{ "presets": ["babel-preset-mbp/stage-3"] }
 ```
 
 ### 查看子依赖和次级依赖
