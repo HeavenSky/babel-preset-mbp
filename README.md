@@ -4,6 +4,8 @@ babel预设的最佳实践
 ## 参考来源
 * preset参考: https://babeljs.io/docs/en/babel-preset-env
 * stage参考: https://npmjs.com/package/@babel/preset-stage-0
+* proposals参考: https://github.com/tc39/proposals
+* 移除stage-4提案,且根据提案最新阶段做调整
 
 ## 使用方法
 * .babelrc
