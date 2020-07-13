@@ -35,3 +35,9 @@ module.exports = function (_api, _option, _cwd) {
 	return { presets: [ ... ], plugins: [ ... ] };
 };
 ```
+
+## 其他说明
+- 子依赖包内包含的命令不会自动安装,常见使用组合
+	- @babel/cli + babel-preset-mbp
+	- babel-loader + babel-preset-mbp
+	- @rollup/plugin-babel + babel-preset-mbp
